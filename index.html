@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+  <title>Nayla Khansa - Linktree</title>
+  <meta content='Linktree Nayla Khansa' name='description'/>
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com' rel='preconnect'/>
+  <link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
+  <link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap' rel='stylesheet'/>
+
+  <!-- Font Awesome 6 -->
+  <link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' integrity='sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==' referrerpolicy='no-referrer' rel='stylesheet'/>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Dancing Script"', 'cursive'],
+          },
+          colors: {
+            trakteer: '#c92a2a',
+            gopay: '#00aed6',
+            linktree: '#43e660',
+          },
+          boxShadow: {
+            'card': '0 4px 15px rgba(0, 0, 0, 0.05)',
+            'card-hover': '0 8px 25px rgba(0, 0, 0, 0.12)',
+            'btn-strong': '0 3px 6px rgba(0,0,0,0.18)',
+            'btn-strong-hover': '0 6px 16px rgba(0,0,0,0.25)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- CSS Standar -->
+  <style>
+    body, header, main, div, a, button, span, p, h1, i, svg {
+      transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-btn {
+      background: rgba(243, 244, 246, 0.65);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .dark .glass-btn {
+      background: rgba(30, 41, 59, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .no-select {
+      user-select: none;
+      -webkit-user-select: none;
+    }
+  </style>
+</head>
+<body class='min-h-full font-sans antialiased text-gray-900 dark:text-gray-100 bg-[#e4e7ea] dark:bg-[#0b1120] transition-colors duration-300 relative selection:bg-rose-200 dark:selection:bg-rose-900 flex flex-col items-center justify-between p-0 m-0 overflow-x-hidden'>
+
+  <!-- THEME TOGGLE -->
+  <header class='w-full max-w-md mx-auto px-5 pt-4 pb-0 flex justify-end items-center z-30'>
+    <button aria-label='Ganti Mode Gelap/Terang' class='p-2.5 rounded-full bg-white/80 dark:bg-gray-800/90 border border-gray-300 dark:border-gray-700 shadow-sm hover:shadow-md hover:scale-110 active:scale-95 text-gray-700 dark:text-amber-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-400 dark:focus:ring-offset-gray-900 cursor-pointer transition-all' id='themeToggleBtn' title='Ganti Mode Gelap/Terang' type='button'>
+      <i class='fa-solid fa-moon text-lg transition-transform duration-300' id='themeIcon'></i>
+    </button>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class='w-full max-w-[410px] mx-auto min-h-[92vh] px-5 pb-7 flex flex-col items-center justify-between relative z-10'>
+
+    <!-- 1. PROFILE SECTION -->
+    <div class='w-full flex flex-col items-center text-center mt-1'>
+      <!-- ATURAN 1: Klik Profil -> DIRECT_LINK (1) -->
+      <a href='https://tinyurl.com/mttrrp36' target='_blank' rel='noopener noreferrer' class='relative group cursor-pointer' id='avatarContainer' title='Nayla Khansa'>
+        <div class='w-32 h-32 sm:w-34 sm:h-34 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-gray-300 via-white to-gray-200 dark:from-gray-700 dark:via-gray-800 dark:to-gray-600 shadow-xl group-hover:scale-105 transition-transform duration-300 ring-2 ring-white/90 dark:ring-gray-700/80'>
+          <img alt='Nayla Khansa' class='w-full h-full rounded-full object-cover select-none' src='https://i.pinimg.com/736x/39/a9/f4/39a9f4f54749e992e3c8bff0d732fa5d.jpg'/>
+        </div>
+      </a>
+      <h1 class='text-2xl sm:text-[26px] font-extrabold text-gray-950 dark:text-white mt-3 tracking-tight'>
+        @NaylaKhansa
+      </h1>
+      <p class='font-script text-[22px] sm:text-[24px] font-semibold text-gray-600 dark:text-gray-300 mt-0.5 tracking-wide'>
+        Follow my social media
+      </p>
+    </div>
+
+    <!-- 2. LINKS SECTION -->
+    <div class='w-full flex flex-col gap-3 my-5 sm:my-6'>
+      
+      <!-- ATURAN 2: Tombol X (18+) -> DIRECT_LINK (4) -->
+      <a class='group relative w-full h-12.5 px-4 flex items-center justify-center rounded-xl border-2 border-[#374151] dark:border-gray-500 glass-btn shadow-card hover:shadow-card-hover hover:-translate-y-0.5 hover:border-black dark:hover:border-white active:scale-[0.99] transition-all duration-200' href='https://s.shopee.co.id/7KxYoYlJ9V' id='btnThreads' rel='noopener noreferrer' target='_blank'>
+        <span class='absolute left-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-200'>
+          <img alt='Threads' class='w-6 h-6 object-contain' src='https://i.pinimg.com/736x/eb/59/55/eb5955a608ba7d7fc7734bfe67087771.jpg'/>
+        </span>
+        <span class='text-base sm:text-[17px] font-bold text-gray-900 dark:text-white tracking-wide py-3'>X (18+)</span>
+      </a>
+
+      <!-- ATURAN 3: Tombol Instagram -> DIRECT_LINK (2) -->
+      <a class='group relative w-full h-12.5 px-4 flex items-center justify-center rounded-xl border-2 border-[#374151] dark:border-gray-500 glass-btn shadow-card hover:shadow-card-hover hover:-translate-y-0.5 hover:border-black dark:hover:border-white active:scale-[0.99] transition-all duration-200' href='https://uplcm.com/4/11972992' id='btnInstagram' rel='noopener noreferrer' target='_blank'>
+        <span class='absolute left-4 flex items-center justify-center text-gray-900 dark:text-white group-hover:scale-110 transition-transform duration-200'>
+          <i class='fa-brands fa-instagram text-[26px]'></i>
+        </span>
+        <span class='text-base sm:text-[17px] font-bold text-gray-900 dark:text-white tracking-wide py-3'>Instagram</span>
+      </a>
+
+      <!-- ATURAN 4: Tombol Tiktok -> DIRECT_LINK (1) -->
+      <a class='group relative w-full h-12.5 px-4 flex items-center justify-center rounded-xl border-2 border-[#374151] dark:border-gray-500 glass-btn shadow-card hover:shadow-card-hover hover:-translate-y-0.5 hover:border-black dark:hover:border-white active:scale-[0.99] transition-all duration-200' href='https://tinyurl.com/mttrrp36' id='btnTiktok' rel='noopener noreferrer' target='_blank'>
+        <span class='absolute left-4 flex items-center justify-center text-gray-900 dark:text-white group-hover:scale-110 transition-transform duration-200'>
+          <i class='fa-brands fa-tiktok text-[22px]'></i>
+        </span>
+        <span class='text-base sm:text-[17px] font-bold text-gray-900 dark:text-white tracking-wide py-3'>Tiktok</span>
+      </a>
+
+      <div class='w-full text-center pt-2.5 pb-1 px-1'>
+        <p class='text-[13px] sm:text-[13.5px] font-semibold text-gray-800 dark:text-gray-200 tracking-tight drop-shadow-sm'>
+          Private Channel (kirim bukti di DM)
+        </p>
+      </div>
+
+      <!-- ATURAN 5: Tombol Trakteer -> DIRECT_LINK (4) -->
+      <a class='group relative w-full h-12.5 px-4 flex items-center justify-center rounded-xl bg-trakteer hover:bg-red-700 text-white border-[2.5px] border-black shadow-btn-strong hover:shadow-btn-strong-hover hover:-translate-y-0.5 active:scale-[0.99] transition-all duration-200' href='https://s.shopee.co.id/7KxYoYlJ9V' id='btnTrakteer' rel='noopener noreferrer' target='_blank'>
+        <div>
+          <svg class='w-4.5 h-4.5 text-red-600 fill-current' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M20 3H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1v7a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-7h1a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-3 13a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9h10v7zm3-9h-1V5h1v2z'/>
+            <path d='M12 12.5c-.83-.83-2.17-.83-3 0s-.83 2.17 0 3l3 3 3-3c.83-.83.83-2.17 0-3s-2.17-.83-3 0z' fill='#dc2626'/>
+          </svg>
+        </div>
+        <span class='text-xl font-extrabold text-white tracking-wide py-2'>Trakteer</span>
+      </a>
+
+      <!-- ATURAN 5: Tombol t.me/+bTsh9s... -> DIRECT_LINK (4) -->
+      <a class='group relative w-full h-12.5 px-4 flex items-center justify-center rounded-xl bg-gopay hover:bg-[#00aed6] text-white border-[2.5px] border-black shadow-btn-strong hover:shadow-btn-strong-hover hover:-translate-y-0.5 active:scale-[0.99] transition-all duration-200' href='https://s.shopee.co.id/7KxYoYlJ9V' id='btnGopay' rel='noopener noreferrer' target='_blank'>
+        <div> 
+        </div>
+        <span class='text-xl font-black text-white tracking-normal py-2'>t.me/+bTsh9s...</span>
+      </a>
+    </div>
+
+    <!-- 3. FOOTER SECTION & BANNER -->
+    <div class='w-full flex flex-col items-center justify-center mt-auto pt-2 gap-2'>
+      <a class='inline-flex items-center gap-2 hover:opacity-90 hover:scale-105 active:scale-95 transition-all duration-200 group cursor-pointer' href='#' id='btnLinktreeLogo' rel='noopener noreferrer' target='_blank' title='linktree'>
+        <div class='w-6.5 h-6.5 rounded-lg bg-linktree flex items-center justify-center shadow-sm p-1'>
+          <svg class='w-4 h-4 text-black fill-current' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+            <path d='m13.736 5.853 4.005-4.117 2.325 2.38-4.04 4.078h5.908v3.264h-5.944l4.076 4.043-2.325 2.38-4.005-4.116v6.235h-3.473v-6.234l-4.004 4.115-2.326-2.38 4.077-4.043h-5.944V8.194h5.908L3.974 4.116l2.326-2.38 4.004 4.117V0h3.473z'/>
+          </svg>
+        </div>
+        <span class='text-black dark:text-white font-extrabold text-base tracking-tight'>linktree</span>
+      </a>
+      
+      <!-- ATURAN 6: "Laporkan Pengguna ?" -> DIRECT_LINK (3) berada tepat di atas copyright -->
+      <a href='https://invl.io/clo2qg4' target='_blank' rel='noopener noreferrer' class='text-[10px] text-gray-500 dark:text-gray-400 text-center font-medium hover:underline mt-2'>
+        Laporkan Pengguna ?
+      </a>
+      
+      <p class='text-[11px] text-gray-500 dark:text-gray-400 text-center font-medium'>
+        &copy; 2026. All rights reserved.
+      </p>
+
+      <!-- ATURAN 7: BANNER_KOTAK persis setelah copyright -->
+      <div class='mt-4 w-full flex justify-center'>
+        <script>
+          atOptions = {
+            'key' : '4d4492b64d792f862d104af2729371c0',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+        </script>
+        <script src="https://www.highrevenueformat.com/4d4492b64d792f862d104af2729371c0/invoke.js"></script>
+      </div>
+    </div>
+  </main>
+  
+  <script>
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    const rootHtml = document.documentElement;
+
+    function applyTheme(isDark) {
+      if (isDark) {
+        rootHtml.classList.add('dark');
+        if (themeIcon) themeIcon.className = 'fa-solid fa-sun text-lg text-amber-400 rotate-180';
+        localStorage.setItem('nayla_preferred_theme', 'dark');
+      } else {
+        rootHtml.classList.remove('dark');
+        if (themeIcon) themeIcon.className = 'fa-solid fa-moon text-lg text-gray-700 rotate-0';
+        localStorage.setItem('nayla_preferred_theme', 'light');
+      }
+    }
+
+    function initTheme() {
+      const stored = localStorage.getItem('nayla_preferred_theme');
+      if (stored === 'dark') applyTheme(true);
+      else if (stored === 'light') applyTheme(false);
+      else {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        applyTheme(prefersDark);
+      }
+    }
+
+    if (themeToggleBtn) {
+      themeToggleBtn.addEventListener('click', function() {
+        applyTheme(!rootHtml.classList.contains('dark'));
+      });
+    }
+
+    initTheme();
+  </script>
+</body>
+</html>
